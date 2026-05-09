@@ -10,15 +10,10 @@ class Settings(BaseSettings):
     pinata_api_secret: str
     pinata_jwt: str
     google_fact_check_api_key: str
-
     solana_rpc_url: str = "https://api.devnet.solana.com"
     solana_program_id: str
     agent_wallet_private_key: str
-
-    cors_origins: List[str] = [
-        "http://localhost:3000",
-    ]
-
+    cors_origins: str = "http://localhost:3000"
     app_name: str = "VeriMatChain AI"
     app_version: str = "1.0.0"
     debug: bool = False
